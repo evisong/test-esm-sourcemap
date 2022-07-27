@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Preact with inline //# sourceMappingURL=preact.min.js.map</title>
+</head>
+
+<body>
+
+  <script src="/preact@10.10.0/dist/preact.min.js"></script>
+  <script>
+    const { h, Component, render } = window.preact;
+
+    // Create your app
+    const app = h('h1', null, 'Preact with inline //# sourceMappingURL=preact.min.js.map');
+
+    render(app, document.body);
+  </script>
+
+  <table border="1">
+    <tr>
+      <th>SourceMap Link in...</th>
+      <th>JS Src (<code>//# sourceMappingURL=&lt;url&gt;</code>)</th>
+      <th>Response Header (<code>SourceMap: &lt;url&gt;</code>)</th>
+    </tr>
+    <tr>
+      <th><code>&lt;script&gt;</code></th>
+      <td><a href="/index.html">/index.html</a></td>
+      <td><a href="/hidden-sourcemap/index.html">/hidden-sourcemap/index.html</a></td>
+    </tr>
+    <tr>
+      <th><code>&lt;script type="module"&gt;</code></th>
+      <td><a href="/esm.html">/esm.html</a></td>
+      <td><a href="/hidden-sourcemap/esm.html">/hidden-sourcemap/esm.html</a></td>
+    </tr>
+  </table>
+</body>
+
+</html>
