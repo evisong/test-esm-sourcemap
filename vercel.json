@@ -1,21 +1,24 @@
 {
   "buildCommand": "yarn build",
   "framework": null,
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "static/hidden-sourcemap/**/*"
-    }
-  },
   "headers": [
     {
-      "source": "/static/hidden-sourcemap/scripts/preact.esm.js",
+      "source": "/hidden-sourcemap/scripts/preact.esm.js",
       "headers": [
         {
-          "key": "X-My-Test",
-          "value": "Value"
+          "key": "SourceMap",
+          "value": "/hidden-sourcemap/scripts/preact.esm.js.map"
+        }
+      ]
+    },
+    {
+      "source": "/hidden-sourcemap/scripts/preact.min.js",
+      "headers": [
+        {
+          "key": "SourceMap",
+          "value": "/hidden-sourcemap/scripts/preact.min.js.map"
         }
       ]
     }
-  ],
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+  ]
 }

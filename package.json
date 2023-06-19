@@ -7,11 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "echo Build nothing",
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "^4.15.2"
+    "build": "echo Build nothing"
   },
   "repository": {
     "type": "git",
