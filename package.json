@@ -2,21 +2,12 @@
   "name": "node-js-getting-started",
   "version": "0.3.0",
   "description": "A sample Node.js app using Express 4",
-  "engines": {
-    "node": "16.x"
-  },
-  "main": "index.js",
   "scripts": {
     "build": "echo Build nothing"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/evisong/test-esm-sourcemap"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
   "license": "MIT"
 }
