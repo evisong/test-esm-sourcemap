@@ -2,7 +2,9 @@
   "buildCommand": "yarn build",
   "framework": null,
   "functions": {
-    "api/index.js": {}
+    "api/index.js": {
+      "includeFiles": "static/hidden-sourcemap/**/*"
+    }
   },
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
