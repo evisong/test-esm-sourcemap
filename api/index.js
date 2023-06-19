@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 express()
-  .use('/hidden-sourcemap', express.static(path.join(__dirname, 'hidden-sourcemap'), {
+  .use('/hidden-sourcemap', express.static(path.join(__dirname, '../', 'hidden-sourcemap'), {
     setHeaders(res) {
       const url = res.req.originalUrl;
       if (url.endsWith('.js')) {
@@ -11,5 +11,5 @@ express()
       }
     }
   }))
-  .use(express.static(path.join(__dirname, 'static'),))
+  .use(express.static(path.join(__dirname, '../', 'static')))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
