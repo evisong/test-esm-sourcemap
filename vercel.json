@@ -6,5 +6,16 @@
       "includeFiles": "static/hidden-sourcemap/**/*"
     }
   },
+  "headers": [
+    {
+      "source": "/static/hidden-sourcemap/scripts/preact.esm.js",
+      "headers": [
+        {
+          "key": "X-My-Test",
+          "value": "Value"
+        }
+      ]
+    }
+  ],
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
 }
